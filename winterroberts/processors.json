@@ -1,0 +1,5 @@
+{"processors": [{
+  "name": "portfolio",
+  "jar": "portfolio.jar",
+  "jdc_class": "me.winterroberts.web.Main"
+}]}

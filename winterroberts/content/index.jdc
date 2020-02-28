@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<link href="/style/portfolio.css" rel="stylesheet" type="text/css"/>
+	<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="/js/portfolio.js" type="text/javascript"></script>
+	<title>Winter Roberts</title>
+</head>
+<jdc javaexecute="portfolio.session.validatesession"/>
+<body>
+	<var javagenerate="portfolio.ajax.gentoken"></var>
+	<var javagenerate="portfolio.session.sessionid"></var>
+	<div class="container">
+		<form action="javascript:void(0)" onsubmit="return contactSubmit();" id="contact-form" method="post">
+			<input class="slide_btn" type="radio" id="Slide1" name="slider" title="Home" autofocus checked="checked"/>
+			<input class="slide_btn" type="radio" id="Slide2" name="slider" title="Portfolio"/>
+			<input class="slide_btn" type="radio" id="Slide3" name="slider" title="About"/>
+			<input class="slide_btn" type="radio" id="Slide4" name="slider" title="Contact"/>
+			<div class="labels">
+				<label for="Slide1" id="Slide1" class="Slide">
+					<div class="content">
+						<h1>Hi, I'm Winter.</h1>
+						<div id="head-img"></div>
+						<p class="subhead">Student / Full Stack Developer</p>
+						<div id="professional-links">
+							<a class="plink" href="https://github.com/winterroberts" target="_blank">
+								<div class="plink-icon" style="background-image: url('/res/linkicons/github.svg');"></div>
+							</a>
+							<a class="plink" href="mailto:winrob@uw.edu">
+								<div class="plink-icon" style="background-image: url('/res/linkicons/mail.svg');"></div>
+							</a>
+							<a class="plink" href="https://linkedin.com/in/winter-r-436239123/" target="_blank">
+								<div class="plink-icon" style="background-image: url('/res/linkicons/linkedin.svg');"></div>
+							</a>
+						</div>
+					</div>
+				</label>
+				<label for="Slide2" id="Slide2" class="Slide">
+					<div class="content full-content">
+						<h2 class="fc-title">Portfolio</h2>
+						<div id="portfolio-container">
+							<div class="project-container">
+								<div class="project">
+									<h3>JDC</h3>
+									<p>Java<br/>&nbsp;</p>
+									<p>
+									JDC is a Server and Application Library that enables implementers
+									to build server-side dynamic pages in Java with a more intuitive
+									JavaScript-like local Document Object Model editor.
+									<br/>
+									<br/>
+									Want to see it in action? JDC is hosting all of my web projects,
+									including the page you're on right now.
+									<br/>&nbsp;
+									</p>
+									<p>
+										<a href="https://github.com/winterroberts/JDCServer" target="_blank" title="JDC Server on GitHub" alt="JDC Server on GitHub">Server GitHub &gt;</a>
+										<br/>&nbsp;
+										<br/>
+										<a href="https://github.com/winterroberts/JDCLib" target="_blank" title="JDC Library on GitHub" alt="JDC Library on GitHub">Library GitHub &gt;</a>
+									</p>
+								</div>
+							</div>
+							<div class="project-container">
+								<div class="project">
+									<h3>Instatools</h3>
+									<p>CSS, Java, HTML<br/>&nbsp;</p>
+									<p>
+									Instatools was originally intended to be a demonstration of what
+									JDC is capable of. It allows users to turn Instagram posts into
+									Twitter cards. To date it remains the only JDC website for which
+									the full source and application itself are publically available.
+									<br/>
+									<br/>
+									More recent builds of Instatools have expanded its functionality,
+									including tracking information that can be tied to the user accounts
+									system on my project hosting site.
+									<br/>&nbsp;
+									</p>
+									<p>
+										<a href="https://instatools.aionstudios.net/" target="_blank" title="Instatools" alt="Instatools">Live &gt;</a>
+										<br/>&nbsp;
+										<br/>
+										<a href="https://github.com/winterroberts/Instatools-JDC" target="_blank" title="Instatools Frontend on GitHub" alt="Instatools Frontend on GitHub">Frontend GitHub &gt;</a>
+										<br/>&nbsp;
+										<br/>
+										<a href="https://github.com/winterroberts/Instatools-Java" target="_blank" title="Instatools Backend on GitHub" alt="Instatools Backend on GitHub">Backend GitHub &gt;</a>
+									</p>
+								</div>
+							</div>
+							<div class="project-container">
+								<div class="project">
+									<h3>Live Comply</h3>
+									<p>CSS, Java, HTML, JavaScript<br/>&nbsp;</p>
+									<p>
+									Live Comply is a system I designed for an old employer (a themepark)
+									to audit and ensure minor-work-law compliance throughout the working
+									day. The system is a single-page-app, relying on AJAX requests.
+									<br/>
+									<br/>
+									Because the system is company-local and contains information pertaining
+									to minor employees only the source is available.
+									<br/>&nbsp;
+									</p>
+									<p>
+										<a href="https://github.com/winterroberts/LiveComply-JDC" target="_blank" title="Live Comply Frontend on GitHub" alt="Live Comply Frontend on GitHub">Frontend GitHub &gt;</a>
+										<br/>&nbsp;
+										<br/>
+										<a href="https://github.com/winterroberts/LiveComply-Java" target="_blank" title="Live Comply Backend on GitHub" alt="Live Comply Backend on GitHub">Backend GitHub &gt;</a>
+										<br/>&nbsp;
+										<br/>
+										<a href="https://github.com/winterroberts/LiveComply-AOS" target="_blank" title="Live Comply AOS on GitHub" alt="Live Comply AOS on GitHub">API GitHub &gt;</a>
+									</p>
+								</div>
+							</div>
+							<div class="project-container">
+								<div class="project">
+									<h3>Horns of Havoc</h3>
+									<p>HTML, CSS, Java, JavaScript<br/>&nbsp;</p>
+									<p>
+									Horns of Havoc is the website I built for my old First Robotics
+									Competition team. While it is by far the biggest project I've
+									completed, the source is closed to protect data and algorithm
+									security.
+									<br/>
+									<br/>
+									Of course I'd love for you to check out the website and team
+									at the link below.
+									<br/>&nbsp;
+									</p>
+									<p>
+										<a href="https://hornsofhavoc3393.com/" target="_blank" title="Horns of Havoc" alt="Horns of Havoc">Live &gt;</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</label>
+				<label for="Slide3" id="Slide3" class="Slide">
+					<div class="content full-content">
+						<h2 class="fc-title">About</h2>
+						<div id="about-container">
+							<div id="about-content">
+								<h3>Me</h3>
+								<p class="subhead">I'm a student based in Seattle, WA.</p>
+								<p>
+								In addition to having programmed robots, websites, servers, and
+								apps for over a decade, I run, take pictures, speak Japanese and
+								I'm learning Spanish.
+								</p>
+							</div>
+							<div id="about-content">
+								<h3>Education</h3>
+								<p class="subhead">University of Washington, Seattle.</p>
+								<p>
+								Pursuing a degree in Computer Science.
+								<ul>
+									<li>CSE 143<span>3.2</span></li>
+									<li>MATH 126<span>3.9</span></li>
+								<ul>
+								</p>
+							</div>
+							<div id="about-content">
+								<h3>Skills</h3>
+								<p class="subhead">Languages</p>
+								<p>
+								<ul>
+									<li>Java</li>
+									<li>C++</li>
+									<li>Python</li>
+									<li>PHP</li>
+									<li>SQL</li>
+									<li>CSS</li>
+									<li>HTML</li>
+									<li>JavaScript</li>
+								<ul>
+								</p>
+								<p class="subhead">Technologies</p>
+								<p>
+								<ul>
+									<li>Linux/Ubuntu Server</li>
+									<li>Apache HTTPD</li>
+									<li>Git</li>
+									<li>Servlets</li>
+									<li>HTTP</li>
+									<li>REST APIs</li>
+									<li>JSON</li>
+									<li>OpenGL</li>
+								<ul>
+								</p>
+							</div>
+							<div id="about-img">
+							</div>
+						</div>
+					</div>
+				</label>
+				<label for="Slide4" id="Slide4" class="Slide">
+					<div class="content full-content">
+						<h2 class="fc-title">Contact</h2>
+						<div id="contact-form-container">
+							<h3>Have a question or want me to join your team?<br/>Let me know.</h3>
+							<p id="javascript-warn" class="subhead">You'll need to enable JavaScript first.</p>
+							<div class="input-container">
+								<input name="contactName" placeholder="Name" type="text" pattern=".{3,32}" value="" required title="3 to 32 characters.">
+							</div>	
+							<div class="input-container">
+								<input name="contactEmail" placeholder="Email" type="email" value="" required title="Enter a valid email address.">
+							</div>
+							<div class="input-container">
+								<textarea name="contactMsg" maxlength="2048" minlength="32" placeholder="Message" id="contact-textarea" required spellcheck="true" title="32 to 2048 characters"></textarea>
+							</div>
+							<div class="input-container">
+								<input name="contactSubmit" type="submit" id="contact-submit" value="Requires JavaScript" disabled>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
